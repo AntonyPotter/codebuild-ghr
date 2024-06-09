@@ -1,5 +1,7 @@
 name: Hello World
-on: [push]
+on: 
+  - push
+  - workflow_dispatch
 jobs:
   Hello-World-Job:
     runs-on: codebuild-codebuild-ghr-${{ github.run_id }}-${{ github.run_attempt }}
